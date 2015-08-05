@@ -14,6 +14,8 @@
 		5F84055C1B7239B500160007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F84055B1B7239B500160007 /* Images.xcassets */; };
 		5F84055F1B7239B500160007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F84055D1B7239B500160007 /* LaunchScreen.xib */; };
 		5F84056B1B7239B500160007 /* iMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84056A1B7239B500160007 /* iMusicTests.m */; };
+		5F8405771B72437300160007 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405751B72437300160007 /* PreferencesViewController.m */; };
+		5F8405781B72437300160007 /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8405761B72437300160007 /* PreferencesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		5F8405641B7239B500160007 /* iMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8405691B7239B500160007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F84056A1B7239B500160007 /* iMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMusicTests.m; sourceTree = "<group>"; };
+		5F8405741B72437300160007 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		5F8405751B72437300160007 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		5F8405761B72437300160007 /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,9 @@
 				5F8405551B7239B500160007 /* ViewController.h */,
 				5F8405561B7239B500160007 /* ViewController.m */,
 				5F8405581B7239B500160007 /* Main.storyboard */,
+				5F8405741B72437300160007 /* PreferencesViewController.h */,
+				5F8405751B72437300160007 /* PreferencesViewController.m */,
+				5F8405761B72437300160007 /* PreferencesViewController.xib */,
 				5F84055B1B7239B500160007 /* Images.xcassets */,
 				5F84055D1B7239B500160007 /* LaunchScreen.xib */,
 				5F84054E1B7239B500160007 /* Supporting Files */,
@@ -202,6 +210,7 @@
 				5F84055A1B7239B500160007 /* Main.storyboard in Resources */,
 				5F84055F1B7239B500160007 /* LaunchScreen.xib in Resources */,
 				5F84055C1B7239B500160007 /* Images.xcassets in Resources */,
+				5F8405781B72437300160007 /* PreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				5F8405571B7239B500160007 /* ViewController.m in Sources */,
 				5F8405541B7239B500160007 /* AppDelegate.m in Sources */,
 				5F8405511B7239B500160007 /* main.m in Sources */,
+				5F8405771B72437300160007 /* PreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
