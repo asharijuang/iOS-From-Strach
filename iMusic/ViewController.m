@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PreferencesViewController.h"
 
 @interface ViewController ()
 
@@ -39,6 +40,11 @@
     NSLog(@"View akan ditampilkan");
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    NSLog(@"View sudah menghilang");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,6 +53,8 @@
 
 - (IBAction)showPreferences:(id)sender {
     NSLog(@"Show Preferences");
+    id controller = [[PreferencesViewController alloc] initWithNibName:@"PreferencesView" bundle:nil];
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 - (IBAction)showList:(id)sender {
