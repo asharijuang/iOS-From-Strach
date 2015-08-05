@@ -45,4 +45,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showPreferences:(id)sender {
+    NSLog(@"Show Preferences");
+}
+
+- (IBAction)showList:(id)sender {
+    NSLog(@"Show List");
+}
+
 @end

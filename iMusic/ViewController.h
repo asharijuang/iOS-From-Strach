@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showPreferences:(id)sender;
+- (IBAction)showList:(id)sender;
 
 @end
 
