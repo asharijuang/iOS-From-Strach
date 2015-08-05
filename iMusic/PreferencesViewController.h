@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PreferencesViewController : UIViewController
+- (IBAction)dismissPreferences:(id)sender;
 
 @end

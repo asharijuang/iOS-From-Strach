@@ -19,7 +19,11 @@
                     <rect key="frame" x="0.0" y="8" width="600" height="44"/>
                     <items>
                         <navigationItem title="Preferences" id="vM5-vq-GVz">
-                            <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="g6F-TG-0yi"/>
+                            <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="g6F-TG-0yi">
+                                <connections>
+                                    <action selector="dismissPreferences:" destination="-1" id="ela-qd-6bT"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>

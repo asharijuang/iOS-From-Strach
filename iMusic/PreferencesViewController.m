@@ -34,4 +34,7 @@
 }
 */
 
+- (IBAction)dismissPreferences:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

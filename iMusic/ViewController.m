@@ -59,6 +59,10 @@
 
 - (IBAction)showList:(id)sender {
     NSLog(@"Show List");
+    
+    // jika kita bisa menghilangkan preferences nib dengan comment dissmissveiw controller, apa jadinya jika dijalankan perintah ini
+    // apakah tampilan akan hilang
+    // [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
