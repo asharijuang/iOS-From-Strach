@@ -17,7 +17,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"View sudah load");
 }
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    
+    NSLog(@"View sudah diunload");
+}
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"view selesai/sudah ditampilkan 😃");
+}
+    
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"View akan ditampilkan");
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
