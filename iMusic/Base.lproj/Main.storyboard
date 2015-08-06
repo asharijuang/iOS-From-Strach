@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -8,24 +8,39 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k5c-n1-eUD"/>
+                        <viewControllerLayoutGuide type="bottom" id="N9N-jo-y0g"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="F9K-dv-lQb">
-                                <rect key="frame" x="125" y="227" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qel-88-hby">
+                                <rect key="frame" x="180" y="67" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Bd-K6-oNo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-dv-lQb">
+                                <rect key="frame" x="217" y="236" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="Rc7-vm-fRt"/>
+                                </constraints>
                                 <state key="normal" title="Show List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USe-Hx-i1e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkV-Cy-rIJ">
-                                <rect key="frame" x="107" y="265" width="106" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Preferences">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkV-Cy-rIJ">
+                                <rect key="frame" x="217" y="274" width="167" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Yx9-eT-Jl1"/>
+                                </constraints>
+                                <state key="normal" title="About">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,16 +50,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F9K-dv-lQb" firstAttribute="top" secondItem="qel-88-hby" secondAttribute="bottom" constant="41" id="Bp2-X4-O3G"/>
+                            <constraint firstItem="lkV-Cy-rIJ" firstAttribute="top" secondItem="F9K-dv-lQb" secondAttribute="bottom" constant="8" symbolic="YES" id="Dz5-5n-PeR"/>
+                            <constraint firstItem="N9N-jo-y0g" firstAttribute="top" secondItem="lkV-Cy-rIJ" secondAttribute="bottom" constant="289" id="GCf-dR-6IJ"/>
+                            <constraint firstItem="lkV-Cy-rIJ" firstAttribute="leading" secondItem="F9K-dv-lQb" secondAttribute="leading" id="J6L-jA-yxW"/>
+                            <constraint firstItem="F9K-dv-lQb" firstAttribute="trailing" secondItem="lkV-Cy-rIJ" secondAttribute="trailing" id="LA8-tg-yPS"/>
+                            <constraint firstItem="F9K-dv-lQb" firstAttribute="centerX" secondItem="qel-88-hby" secondAttribute="centerX" id="N4N-RR-lHZ"/>
+                            <constraint firstItem="lkV-Cy-rIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xk7-1z-D9a"/>
+                            <constraint firstItem="qel-88-hby" firstAttribute="top" secondItem="k5c-n1-eUD" secondAttribute="bottom" constant="47" id="gW4-nk-ijH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="246"/>
+            <point key="canvasLocation" x="16.875" y="259.85915492957747"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
