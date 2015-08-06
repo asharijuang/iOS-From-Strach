@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *logoView;
+
+
 - (IBAction)showPreferences:(id)sender;
 - (IBAction)showList:(id)sender;
 
