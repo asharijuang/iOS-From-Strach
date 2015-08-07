@@ -7,21 +7,40 @@
 //
 
 #import "MusicListTableViewController.h"
+#import "Album.h"
 
 @interface MusicListTableViewController ()
 
+@property (nonatomic, strong) NSMutableArray *albums;
 @end
 
 @implementation MusicListTableViewController
 
+@synthesize albums = _albums;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Music List";
+    
+    // fake data
+    Album *album = [[Album alloc] init];
+    album.albumID = 1;
+    album.albumName = @"Love Soul";
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.albums = [NSMutableArray arrayWithArray:[Album findAll]];
+    NSLog(@"music table willAppear, and albums %@", self.albums.count);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +53,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return self.albums.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -43,15 +62,26 @@
     return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     
     // Configure the cell...
     
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
+    
+    Album *album = [self.albums objectAtIndex:indexPath.row];
+    cell.textLabel.text = album.albumName;
+    
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
