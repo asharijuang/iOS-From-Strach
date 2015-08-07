@@ -16,6 +16,15 @@
 		5F84056B1B7239B500160007 /* iMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84056A1B7239B500160007 /* iMusicTests.m */; };
 		5F8405771B72437300160007 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405751B72437300160007 /* PreferencesViewController.m */; };
 		5F8405781B72437300160007 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8405761B72437300160007 /* PreferencesView.xib */; };
+		5F8405E61B74352E00160007 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8405E51B74352E00160007 /* logo.png */; };
+		5F8405E91B74562F00160007 /* MusicListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405E81B74562F00160007 /* MusicListTableViewController.m */; };
+		5F8405EA1B74562F00160007 /* MusicListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405E81B74562F00160007 /* MusicListTableViewController.m */; };
+		5F8405EC1B746A5200160007 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8405EB1B746A5200160007 /* MainView.xib */; };
+		5F8405ED1B746A5200160007 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8405EB1B746A5200160007 /* MainView.xib */; };
+		5F8405F01B746FA200160007 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405EF1B746FA200160007 /* MainViewController.m */; };
+		5F8405F11B746FA200160007 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8405EF1B746FA200160007 /* MainViewController.m */; };
+		5F84062B1B74E7EA00160007 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84062A1B74E7EA00160007 /* Artist.m */; };
+		5F84062E1B74E81200160007 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84062D1B74E81200160007 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,16 @@
 		5F8405741B72437300160007 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		5F8405751B72437300160007 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		5F8405761B72437300160007 /* PreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesView.xib; sourceTree = "<group>"; };
+		5F8405E51B74352E00160007 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		5F8405E71B74562F00160007 /* MusicListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListTableViewController.h; sourceTree = "<group>"; };
+		5F8405E81B74562F00160007 /* MusicListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListTableViewController.m; sourceTree = "<group>"; };
+		5F8405EB1B746A5200160007 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		5F8405EE1B746FA200160007 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5F8405EF1B746FA200160007 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5F8406291B74E7EA00160007 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		5F84062A1B74E7EA00160007 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		5F84062C1B74E81200160007 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		5F84062D1B74E81200160007 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +87,7 @@
 		5F8405421B7239B500160007 = {
 			isa = PBXGroup;
 			children = (
+				5F8405E51B74352E00160007 /* logo.png */,
 				5F84054D1B7239B500160007 /* iMusic */,
 				5F8405671B7239B500160007 /* iMusicTests */,
 				5F84054C1B7239B500160007 /* Products */,
@@ -88,14 +108,9 @@
 			children = (
 				5F8405521B7239B500160007 /* AppDelegate.h */,
 				5F8405531B7239B500160007 /* AppDelegate.m */,
-				5F8405551B7239B500160007 /* ViewController.h */,
-				5F8405561B7239B500160007 /* ViewController.m */,
-				5F8405581B7239B500160007 /* Main.storyboard */,
-				5F8405741B72437300160007 /* PreferencesViewController.h */,
-				5F8405751B72437300160007 /* PreferencesViewController.m */,
-				5F8405761B72437300160007 /* PreferencesView.xib */,
+				5F8406271B74E76F00160007 /* Controllers */,
 				5F84055B1B7239B500160007 /* Images.xcassets */,
-				5F84055D1B7239B500160007 /* LaunchScreen.xib */,
+				5F8406281B74E77A00160007 /* Models */,
 				5F84054E1B7239B500160007 /* Supporting Files */,
 			);
 			path = iMusic;
@@ -125,6 +140,36 @@
 				5F8405691B7239B500160007 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F8406271B74E76F00160007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F84055D1B7239B500160007 /* LaunchScreen.xib */,
+				5F8405581B7239B500160007 /* Main.storyboard */,
+				5F8405EB1B746A5200160007 /* MainView.xib */,
+				5F8405EE1B746FA200160007 /* MainViewController.h */,
+				5F8405EF1B746FA200160007 /* MainViewController.m */,
+				5F8405E71B74562F00160007 /* MusicListTableViewController.h */,
+				5F8405E81B74562F00160007 /* MusicListTableViewController.m */,
+				5F8405761B72437300160007 /* PreferencesView.xib */,
+				5F8405741B72437300160007 /* PreferencesViewController.h */,
+				5F8405751B72437300160007 /* PreferencesViewController.m */,
+				5F8405551B7239B500160007 /* ViewController.h */,
+				5F8405561B7239B500160007 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5F8406281B74E77A00160007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F8406291B74E7EA00160007 /* Artist.h */,
+				5F84062A1B74E7EA00160007 /* Artist.m */,
+				5F84062C1B74E81200160007 /* Album.h */,
+				5F84062D1B74E81200160007 /* Album.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F84055A1B7239B500160007 /* Main.storyboard in Resources */,
+				5F8405E61B74352E00160007 /* logo.png in Resources */,
 				5F84055F1B7239B500160007 /* LaunchScreen.xib in Resources */,
+				5F8405EC1B746A5200160007 /* MainView.xib in Resources */,
 				5F84055C1B7239B500160007 /* Images.xcassets in Resources */,
 				5F8405781B72437300160007 /* PreferencesView.xib in Resources */,
 			);
@@ -218,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8405ED1B746A5200160007 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,9 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8405571B7239B500160007 /* ViewController.m in Sources */,
+				5F8405F01B746FA200160007 /* MainViewController.m in Sources */,
 				5F8405541B7239B500160007 /* AppDelegate.m in Sources */,
+				5F84062E1B74E81200160007 /* Album.m in Sources */,
 				5F8405511B7239B500160007 /* main.m in Sources */,
+				5F8405E91B74562F00160007 /* MusicListTableViewController.m in Sources */,
 				5F8405771B72437300160007 /* PreferencesViewController.m in Sources */,
+				5F84062B1B74E7EA00160007 /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F84056B1B7239B500160007 /* iMusicTests.m in Sources */,
+				5F8405F11B746FA200160007 /* MainViewController.m in Sources */,
+				5F8405EA1B74562F00160007 /* MusicListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +482,7 @@
 				5F8405701B7239B500160007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F8405711B7239B500160007 /* Build configuration list for PBXNativeTarget "iMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +491,7 @@
 				5F8405731B7239B500160007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

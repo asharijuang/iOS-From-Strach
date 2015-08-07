@@ -11,6 +11,10 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoView;
+@property (weak, nonatomic) IBOutlet UIButton *viewListButton;
+@property (weak, nonatomic) IBOutlet UIButton *aboutButton;
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 - (IBAction)showPreferences:(id)sender;

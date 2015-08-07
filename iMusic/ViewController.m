@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PreferencesViewController.h"
+#import "MusicListTableViewController.h"
 
 @interface ViewController ()
 
@@ -15,11 +16,18 @@
 
 @implementation ViewController
 
-
+@synthesize logoView, viewListButton, aboutButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Coba Akses logo view
+    NSLog(@"Logo View: %@", self.logoView);
+    
+    // fill image view with logo.png
+    UIImage *logoImage = [UIImage imageNamed:@"logo"];
+    logoView.image = logoImage;
     
     NSLog(@"View sudah load");
 }
@@ -61,6 +69,11 @@
 
 - (IBAction)showList:(id)sender {
     NSLog(@"Show List");
+//    
+    MusicListTableViewController *controller = [[MusicListTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
     
     // jika kita bisa menghilangkan preferences nib dengan comment dissmissveiw controller, apa jadinya jika dijalankan perintah ini
     // apakah tampilan akan hilang
